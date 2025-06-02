@@ -25,15 +25,15 @@ export default {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: '#0066FF',
+          DEFAULT: '#FF1493',
           foreground: '#ffffff'
         },
         secondary: {
-          DEFAULT: '#00D4FF',
+          DEFAULT: '#FF69B4',
           foreground: '#ffffff'
         },
         accent: {
-          DEFAULT: '#8B5CF6',
+          DEFAULT: '#FFB6C1',
           foreground: '#ffffff'
         },
         success: {
@@ -125,10 +125,10 @@ export default {
         },
         'pulse-glow': {
           '0%, 100%': {
-            boxShadow: '0 0 5px rgba(59, 130, 246, 0.5)'
+            boxShadow: '0 0 5px rgba(255, 20, 147, 0.5)'
           },
           '50%': {
-            boxShadow: '0 0 20px rgba(59, 130, 246, 0.8)'
+            boxShadow: '0 0 20px rgba(255, 20, 147, 0.8)'
           }
         },
         'float': {
@@ -171,6 +171,14 @@ export default {
           '75%': {
             transform: 'translateY(-5px) translateX(-5px)'
           }
+        },
+        'cta-bounce': {
+          '0%, 100%': {
+            transform: 'scale(1)'
+          },
+          '50%': {
+            transform: 'scale(1.05)'
+          }
         }
       },
       animation: {
@@ -185,7 +193,8 @@ export default {
         'float': 'float 3s ease-in-out infinite',
         'card-rotate': 'card-rotate 1s ease-in-out',
         'magnetic-hover': 'magnetic-hover 0.3s ease-out',
-        'particle-float': 'particle-float 3s ease-in-out infinite'
+        'particle-float': 'particle-float 3s ease-in-out infinite',
+        'cta-bounce': 'cta-bounce 0.7s ease-in-out'
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
